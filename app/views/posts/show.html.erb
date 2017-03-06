@@ -1,0 +1,99 @@
+<% if notice %> 
+  		<div class="alert blog-alert alert-success">
+		    <div class="container-fluid">
+			  <div class="alert-icon">
+				<i class="material-icons">check</i>
+			  </div>
+			  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				<span aria-hidden="true"><i class="material-icons">clear</i></span>
+			  </button>
+		      <%= notice %>
+		    </div>
+		</div>
+		<% end %>
+
+		<% if alert %>
+		<div class="alert blog-alert alert-danger">
+		    <div class="container-fluid">
+			  <div class="alert-icon">
+			    <i class="material-icons">error_outline</i>
+			  </div>
+			  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				<span aria-hidden="true"><i class="material-icons">clear</i></span>
+			  </button>
+			  <%= alert %>
+		    </div>
+		</div>
+		<% end %>
+
+<!-- <p>
+  <strong>Title:</strong>
+  <%#= @post.title %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%#= @post.body %>
+</p>
+
+<p>
+  <strong>Published at:</strong>
+  <%#= @post.published_at %>
+</p> -->
+
+<%#= link_to 'Edit', edit_post_path(@post) %> |
+<%#= link_to 'Back', posts_path %>
+
+
+<div class="main main-raised">
+  <div class="blog-container">
+    <div class="container">
+      <div class="row">
+        <div class="profile">
+          <!-- <div class="avatar">
+            <img src="../assets/christian.jpg" alt="Circle Image" class="img-circle img-responsive img-raised">
+          </div> -->
+          <div>
+            <h3 class="blog-title"><%= @post.title %></h3>
+            <h6 class="small"><%= @post.published_at.strftime("%b %-d") %></h6>
+          </div>
+        </div>
+      </div>
+      <div class="blog-body text-center">
+        <p><%= markdown @post.body %></p>
+
+        <div id="share_box">
+			<h4>Share The Title</h4>
+			<a onclick="javascript:window.open('http://twitter.com/share?text=<%= @post.title %> by @newtonlaw18 - &amp;url=<%= url_for([@post, {only_path: false}]) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-twitter"></i></a>
+			
+			 <a onclick="javascript:window.open('http://www.facebook.com/sharer.php?u=<%= url_for([@post, {only_path: false}]) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-facebook"></i></a>
+    		<!-- Google Plus -->
+    		<a onclick="javascript:window.open('https://plus.google.com/share?url=<%= url_for([@post, {only_path: false}]) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-google-plus"></i></a>
+		</div>
+
+		<div id="disqus_thread"></div>
+		<script>
+
+		/**
+		*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+		*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+		/*
+		var disqus_config = function () {
+		this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+		this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+		};
+		*/
+		(function() { // DON'T EDIT BELOW THIS LINE
+		var d = document, s = d.createElement('script');
+		s.src = 'https://nerdy-newton.disqus.com/embed.js';
+		s.setAttribute('data-timestamp', +new Date());
+		(d.head || d.body).appendChild(s);
+		})();
+		</script>
+		<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+		                                
+      </div>
+
+    </div>
+  </div>
+</div>

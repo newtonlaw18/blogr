@@ -95,6 +95,7 @@ GEM
     nokogiri (1.7.0.1)
       mini_portile2 (~> 2.1.0)
     orm_adapter (0.5.0)
+    programr (0.0.1)
     puma (3.7.1)
     pygments.rb (1.1.1)
       multi_json (>= 1.0.0)
@@ -183,6 +184,7 @@ DEPENDENCIES
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)
+  programr
   puma (~> 3.0)
   pygments.rb
   rails (~> 5.0.2)

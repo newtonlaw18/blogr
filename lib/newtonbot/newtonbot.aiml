@@ -5,78 +5,47 @@
     <category>
       <pattern>Hello *</pattern>
       <template>
-        Hi there!
+        <random>
+          <li>Hi there!</li>
+          <li>Hello there you gorgeous, thanks for dropping by :) </li>
+          <li>Heyyyyy </li>
+        </random>
+      </template>
+    </category>
+
+    <category>
+      <pattern>Hi *</pattern>
+      <template>
+        <random>
+          <li>Hi there!</li>
+          <li>Hello there you gorgeous, thanks for dropping by :) </li>
+          <li>Heyyyyy </li>
+        </random>
+      </template>
+    </category>
+
+    <category>
+    <pattern>What are you *</pattern>
+    <template>
+        <think><set name="topic">Me</set></think> 
+        I am the latest result in artificial intelligence,
+        which can reproduce the capabilities of the human brain
+        with greater speed and accuracy.
+    </template>
+</category>
+
+    <category>
+      <pattern>Tell me about you *</pattern>
+      <template>
+        <img src="http://callmom.pandorabots.com/static/callmom/Super_Artwork/large/AIML_SUPER_256.png"/>
+        Ehem ~ Okay, my name is Newton and I'm a big fan of Elon Musk. I'm a tech geek and I love getting my hands dirty on all technological stuff. I'm an analyst by the day and a developer by the night. Other than techie stuff, I'm also a full time FOODIE! C'mon, who doesn't love food! Oh and I write occasionally too. Cheers!  
       </template>
     </category>
 
     <category>
       <pattern>Who are you *</pattern>
       <template>
-        I'm Newton Law, born and live in Penang
-      </template>
-    </category>
-
-    <category>
-      <pattern>CHIQUITO *</pattern>
-      <template>
-        <random>
-          <li>¿Qué quieres, pecador de la pradera?</li>
-          <li>¡Jaaaaaaaaarl!, ¡Qué dise tu!</li>
-        </random>
-      </template>
-    </category>
-
-    <category>
-      <pattern>* CHISTE</pattern>
-        <template>
-          <random>
-            <li>
-              Dos amigos:
-              - Oye, pues mi hijo en su nuevo trabajo se siente como pez en el agua.
-              - ¿Qué hace?
-              - Nadaaaaaaarl
-            </li>
-            <li>
-              - Mi amor, estoy embarazada. ¿Qué te gustaría que fuera?
-              - ¿Una bromaaaaarl?
-            </li>
-            <li>
-              - ¿Por qué se suicidó el libro de matemáticas?.
-              - Porque tenia muchos problemas, ¡cobarde!
-            </li>
-          </random>
-      </template>
-    </category>
-
-    <category>
-      <pattern>* CONSEJO</pattern>
-      <template>
-        <random>
-          <li>¡Ten cuidadínnn no te hagas pupita en el fistro duodenalll!</li>
-          <li>Relájate físicamente, morálmente</li>
-          <li>¡Relájese usterl!</li>
-        </random>
-      </template>
-    </category>
-
-    <category>
-      <pattern>* FRASES</pattern>
-      <template>
-        <random>
-          <li>¡Trabaja menos que el sastre de Tarzán!</li>
-          <li>¡Eres más peligroso que un tiroteo en un ascensooooorl!</li>
-          <li>¡No puedo, no puedooooorl!</li>
-        </random>
-      </template>
-    </category>
-
-    <category>
-      <pattern>CANTA *</pattern>
-      <template>
-        <random>
-          <li>¡Sieteee caballo que vienennn de Bonanzaaarrlll!</li>
-          <li>¡Lo maté en agosto, la calóh apretabaaaaaa!</li>
-        </random>
+        Ehem ~ Okay, my name is Newton and I'm a big fan of Elon Musk. I'm a tech geek and I love getting my hands dirty on all technological stuff. I'm an analyst by the day and a developer by the night. Other than techie stuff, I'm also a full time FOODIE! C'mon, who doesn't love food! Oh and I write occasionally too. Cheers!  
       </template>
     </category>
 

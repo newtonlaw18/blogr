@@ -18,14 +18,12 @@
 $(document).on('turbolinks:load', function() {
   $('#query').on("keydown", function(event) {
   	if(event.keyCode === 13){
-  		alert('enter');
   		$.ajax({
 	      	url: '/ask_newtonbot',
 	      	type: 'json',
 	      	method: 'get',
 	      	data: { query: $('#query').val() },
 	      	success: function(data) {
-	      		alert('success');
 		        $('.newtonbot-response').removeClass('hide');
 		        $('#newton-response').html(data['response']);
 		        $('#query').val('');

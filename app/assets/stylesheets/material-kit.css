@@ -3772,20 +3772,41 @@ h2.title {
   cursor: pointer;
 }
 
-#newton-response {
-  border: 1px solid deepskyblue;
-  background-color: deepskyblue;
-  border-radius: 50px;
-  padding: 15px;
-  color: white;
+.chatbox{
   margin-top: 50px;
-  padding-left: 35px;
-  padding-right: 35px;
+}
+
+.chatbox p{
+  border-radius: 50px;
+  padding: 10px;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
   text-align: left;
   display: inline-block;
 }
 
-#newton-response:empty{
+.user-response-div{
+  float: right;
+  clear: right;
+}
+
+.sina-response-div{
+  clear: left;
+}
+
+#sina-response {
+  border: 1px solid deepskyblue;
+  background-color: deepskyblue;
+}
+
+#user-response{
+  display: table;
+  border: 1px solid #F44336;
+  background-color: #F44336;
+ }
+
+ #sina-response:empty, #user-response:empty{
   display: none;
 }
 

@@ -25,7 +25,8 @@ $(document).on('turbolinks:load', function() {
 	      	data: { query: $('#query').val() },
 	      	success: function(data) {
 		        $('.newtonbot-response').removeClass('hide');
-		        $('#newton-response').html(data['response']);
+		        $('#sina-response').html('<i class="fa fa-android fa-2" aria-hidden="true"></i> ' + data['response']);
+		        $('#user-response').html('<i class="fa fa-user fa-2" aria-hidden="true"></i> ' + $('#query').val());
 		        $('#query').val('');
 
 		    }

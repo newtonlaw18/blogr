@@ -80,10 +80,10 @@
     </nav>
 
     <div class="wrapper">
-    	<div class="header header-filter" style="background-image: url('<%= @server_url %>assets/examples/ferdinand.jpg');"></div>
+    	<div class="header header-filter" style="background-image: url('<%= asset_path("examples/ferdinand.jpg") %>');"></div>
     	<!-- <img src="https://source.unsplash.com/category/nature/1600x900"> -->
     	<!-- ../assets/examples/unsplash.jpg -->
-
+        <!-- <%= @server_url %>assets/examples/ferdinand.jpg -->
         
         
     	<% if notice %> 
